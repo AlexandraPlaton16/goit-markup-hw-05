@@ -432,57 +432,57 @@ height: 20px;
 
 
 /* Customers Section */
-.customers{
+/* Customers Section */
+.customers {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 1128px;
-height: 200px;
-top: 2568px;
-left: 156px;
-margin-top: 100px;
-
+  height: 200px;
+  top: 2568px;
+  left: 156px;
+  margin-top: 100px;
 }
 
-.cutomers-container{
+.customers-container {
   display: flex;
   justify-content: center;
   width: 1128px;
-height: 200px;
-top: 2568px;
-left: 156px;
-
+  height: 200px;
+  top: 2568px;
+  left: 156px;
 }
 
-.customers-title{
-padding-right: 155px;
- 
+.customers-title {
+  padding-right: 155px;
 }
 
-.customers-icons{
+.customers-icons {
   display: flex;
   align-items: center;
-  gap:24px;
+  gap: 24px;
   padding-top: 72px;
   padding-bottom: 120px;
   padding-left: 100px;
 }
 
-.icon{
+.icon {
   width: 168px;
-height: 88px;
-border-radius: 4px;
-border: 1px solid #8E8F99;
+  height: 88px;
+  border-radius: 4px;
+  border: 1px solid #8E8F99;
 }
 
-
- .icon:hover{
-  border-color: var(--ocean);
+/* Target the SVGs directly within the .icon on hover */
+.customers-icons .icon:hover > svg {
+  fill: var(--ocean) !important;
 }
 
-.icon svg{
-  fill: var(--ocean);
+/* Add this rule if there are any existing styles affecting the border color */
+.customers-icons .icon:hover {
+  border-color: var(--ocean) !important;
 }
+
 /* Customers Section */
 
 
@@ -677,66 +677,66 @@ gap: 8px;
 /*Footers*/
 
 .footer {
-
-height: 312px;
-top: 2888px;
+  width: 1440px;
+  height: 312px;
   background-color: var(--navy-blue);
 }
 
-.footer-content{
+.footer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -300px;
+  gap: 5px;
+ }
+
+.footer-content {
   width: 264px;
   height: 112px;
   top: 2988px;
-  left: 156px;
-  
+  margin-left: 156px;
+  margin-top: 100px;
+  float: left; /* Float the footer-content to the left */
 }
 
-.footer-logo{
+.footer-logo {
   padding-bottom: 16px;
   text-decoration: none;
 }
 
-.footer-text{
+.footer-text {
   width: 264px;
-height: 72px;
-top: 3028px;
-left: 156px;
+  height: 72px;
+  top: 3028px;
+  left: 156px;
+  padding-top: 16px;
 
-font-family: Roboto;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.02em;
-text-align: left;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
 
-
-font-family: Roboto;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.02em;
-text-align: left;
-
-color: var(--cloud) ;
-
-
+  color: var(--cloud);
 }
 
-.footer-icons-list{width: 264px
-  height: 112px
-  top: 2988px
-  left: 156px
-  gap: 10px;
-  margin-top: 30px;
-  
-}
-.footer-icons-list .icon svg{
-width: 20px;
-height: 20px;
-
+/* Footer Icons List */
+.footer-icons-list {
+  display: flex;
+  flex-direction: column; /* Display children in a column layout */
+  align-items: flex-start; /* Center items horizontally */
+  padding-top: 100px;
+  padding-bottom: 50px;/* Add top margin for spacing from the footer */
+  padding-left: 140px; /* Add left margin for spacing from the left edge */
 }
 
-.footer-icons-list .icon{
+.footer-icons .icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-icons .icon {
   width: 44px;
   height: 44px;
   background-color: #404bbf;
@@ -746,47 +746,104 @@ height: 20px;
   align-items: center;
 }
 
-.footer-icons-list .icon:hover{
-  width: 44px;
-  height: 44px;
+.footer-icons .icon:hover {
   background-color: var(--green);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icons{
-display: flex;
-
-
-  width: Hug (208px);
-height: Hug (40px);
-top: 3028px;
-left: 540px;
-gap: 16px;
-
+.footer-icons {
+  display: flex;
+  border-radius: 50%;
+  top: 3028px;
+  left: 540px;
+  gap: 16px;
 }
-.footer-title{
+
+.footer-title {
   width: 96px;
-height: 24px;
-top: 2988px;
-left: 540px;
-font-family: roboto;
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-text-align: left;
-color: var(--white);
-padding-bottom: 16px;
-
-
-
+  height: 24px;
+  top: 2988px;
+  left: 540px;
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: var(--white);
+  padding-bottom: 16px;
+ /* Move the .footer-title to the beginning of the flex container */
+  
+  
 }
 
+/* Subscribe Section */
+.subscribe{
+  padding-left: -80px;;
+}
 
-/*Footers*/
+.subscribe-title{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  padding-bottom: 16px;
+  color: var(--white) ;
+
+  
+
+}
+.ftr{
+  display: flex;
+  gap: 24px;
+}
+.footer-content {
+  gap: 80px;
+}
+.footer-input{
+ 
+}
+.ftr-input{
+  width: 264px;
+height: 40px;
+top: 140px;
+left: 828px;
+border-radius: 4px;
+border: 1px;
+border: 1px solid var(--white);
+box-shadow: 0px 4px 4px 0px #00000026;
+background-color:  var(--navy-blue);
+
+}
+.ftr-input::placeholder {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  padding-left: 16px;
+  color: var(--white);
+}
+.ftr-btn{
+  background-color: var(--iris);
+  border:  var(--iris);
+  color: var(--white);
+  width: 165px;
+  height: 40px;
+  top: 140px;
+  left: 1116p;
+  padding: 8px 24px;
+  border-radius: 4px;
+  gap: 16px;
+}
+
+.ftr-btn:hover{
+  cursor: pointer;
+  transition: 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Footers */
 
 
 
@@ -812,11 +869,129 @@ padding-bottom: 16px;
   margin: 0 auto;
   padding: 16px;
   background-color: var(--dairy);
-  width: 50%;
-  height: 500px;
+  width: 408px;
+  height: 608px;
   position: relative;
 }
 
+.modal-text{
+  width: 360px;
+height: 24px;
+top: 152px;
+left: 540px;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.02em;
+text-align: center;
+color: var(--navy-blue);
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 72px;
+margin-left: 24px;
+
+
+
+
+}
+.modal-input{
+  display: block;
+  width: Fixed (360px);
+height: Hug (336px);
+top: 192px;
+left: 540px;
+border-radius: 4px;
+gap: 8px;
+margin-top: 16px;
+margin-left: 24px;
+
+}
+/* Data modal section */
+.modal-content input:focus {
+  border-color: var(--iris);
+}
+
+/* You can also apply the same style for textarea elements if needed */
+.modal-content textarea:focus {
+  border-color: var(--your-desired-color);
+}
+
+#name{
+  width: 360px;
+height: 40px;
+top: 18px;
+border-radius: 4px;
+border: 1px solid var(--cornflower);
+
+}
+
+#tel{
+  width: 360px;
+  height: 40px;
+  top: 18px;
+  border-radius: 4px;
+  border: 1px solid var(--navy-blue);
+}
+#email{
+  width: 360px;
+  height: 40px;
+  top: 18px;
+  border-radius: 4px;
+  border: 1px solid var(--navy-blue);
+}
+#comment{
+  width: 360px;
+height: 120px;
+top: 216px;
+border-radius: 4px;
+border: 1px solid var(--navy-blue);
+
+}
+#privacy{
+  width: 16px;
+height: 16px;
+border-radius: 2px;
+border: 1px solid var(--navy-blue);
+
+}
+.privacy-text{
+  width: 338px;
+height: 16px;
+
+
+font-family: Roboto;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0.04em;
+text-align: left;
+
+
+font-family: Roboto;
+font-size: 12px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0.04em;
+text-align: left;
+}
+.send{
+  width: 169px;
+height: 56px;
+top: 584px;
+left: 635px;
+padding: 16px, 32px, 16px, 32px;
+border-radius: 4px;
+gap: 10px;
+color: var(--white);
+background-color: var(--iris);
+margin: 24px 120px 24px 119px;
+border: var(--iris);
+}
+.send:hover{
+  cursor: pointer;
+}
 .close-btn{
   background-color: var(--cornflower);
   border-radius: 50%;
@@ -824,8 +999,9 @@ padding-bottom: 16px;
   border-color: var(--light-slate);
   outline: none;
   position: absolute;
-  top: 24px;
+  margin-top: 24px;
   right: 24px;
+  margin-bottom: 24px;
 }
 
 .close-btn:active{
@@ -837,5 +1013,8 @@ padding-bottom: 16px;
   position: absolute;
   top: 24px;
   right: 24px;
+}
+.privacy{
+  display: flex;
 }
 /* Data modal */
